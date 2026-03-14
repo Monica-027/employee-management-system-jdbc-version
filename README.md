@@ -1,28 +1,21 @@
-Employee Management System (JDBC)
+# Employee Management System (JDBC)
 
 A simple Java application that performs CRUD operations on an employee database using JDBC.
 
-Technologies Used
+# Technologies Used:
+- Java
+- JDBC
+- PostgreSQL
+- Maven
 
-Java
+# Features
+- Add Employee
+- View All Employees
+- Update Employee
+- Delete Employee
+- Delete All Employee
 
-JDBC
-
-PostgreSQL
-
-SQL
-
-Features
-
-Add Employee
-
-View All Employees
-
-Update Employee
-
-Delete Employee
-
-Database Setup
+# Database Setup
 CREATE DATABASE ems;
 
 CREATE TABLE employee (
@@ -31,29 +24,32 @@ CREATE TABLE employee (
   email VARCHAR(100),
   salary DOUBLE PRECISION
 );
-Database Configuration
+# Database Configuration
 
 Update credentials in DBConnection.java
 
 public static final String URL = "jdbc:postgresql://localhost:5432/ems";
-public static final String USERNAME = "db_username";
+
+public static final String USERNAME = "db_name";
+
 public static final String PASSWORD = "db_password";
-Project Structure
+
+# Project Structure
 model       → Employee class
+
 repository  → Database operations
+
 service     → Business logic
+
 util        → Database connection
+
 Main        → Application entry point
-Key Concepts Used
 
-JDBC Connection
+# Key Concepts Used
+- JDBC Connection
+- PreparedStatement
+- ResultSet
+- Try-with-resources
 
-PreparedStatement
-
-ResultSet
-
-Try-with-resources
-
-Author
-
+# Author
 Monica Prajapati
