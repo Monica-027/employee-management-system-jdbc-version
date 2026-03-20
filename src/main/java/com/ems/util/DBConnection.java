@@ -6,8 +6,8 @@ import java.sql.DriverManager;
 public class DBConnection {
 	
 	public static final String URL = "jdbc:postgresql://localhost:5432/ems";
-	public static final String USERNAME = "postgres";
-	public static final String PASSWORD = "postgres";
+	public static final String USERNAME = "db_username";
+	public static final String PASSWORD = "db_password";
 	
 	public static Connection createConnection() {
 		Connection conn = null;
